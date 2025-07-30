@@ -72,7 +72,7 @@ const galleryData = {
       "/gallery/Shea/4.jpg",
       "/gallery/Shea/5.jpg",
       "/gallery/Shea/6.jpg",
-
+      "/gallery/Shea/7.jpg",
       "/gallery/Shea/8.jpg",
       "/gallery/Shea/9.jpg",
     ],
@@ -91,7 +91,7 @@ export default function MemberGallery() {
         <h2 className="text-2xl font-bold mb-4 text-gray-700">
           No gallery found for <span className="capitalize">{memberId}</span>
         </h2>
-        <Link to="/team-gallery" className="text-indigo-600 underline">
+        <Link to="/team-gallery" className="text-customBlue underline">
           Back to Team
         </Link>
       </div>
@@ -133,9 +133,10 @@ export default function MemberGallery() {
 
       {/* Back Link */}
       <div className="mt-10 text-center">
+        
         <Link
           to="/team-gallery"
-          className="inline-block text-indigo-600 hover:text-indigo-800 underline transition duration-200"
+          className="inline-block px-4 py-2 mt-6 text-white bg-customBlue hover:bg-indigo-700 rounded-md transition-colors duration-300"
         >
           ← Back to Team
         </Link>
