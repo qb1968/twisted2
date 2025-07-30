@@ -1,28 +1,28 @@
 import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
 
-import Img1 from "/gallery/13606694-1028986350520875-2816605082181279621-n_1.jpg";
-import Img2 from "/gallery/13615171-1028986490520861-4117132115131478260-n.jpg";
-import Img3 from "/gallery/13615299-1028986417187535-280765896531603735-n.jpg";
-import Img4 from "/gallery/13654293-1028986377187539-1343887015239462793-n.jpg";
-import Img5 from "/gallery/13654331-1028986290520881-8104479827601347234-n.jpg";
-import Img6 from "/gallery/13669796-1028986640520846-6021489251483363875-n.jpg";
-import Img7 from "/gallery/30531041-1636385743114263-284652015559114752-n_1.jpg";
-import Img9 from "/gallery/3965389595778905444.jpg";
-import Img10 from "/gallery/img-2515_orig.png";
-import Img11 from "/gallery/img-2517.png";
-import Img12 from "/gallery/img-2533.png";
-import Img13 from "/gallery/img-2533_orig.png";
-import Img14 from "/gallery/img-3181-2.png";
-import Img15 from "/gallery/img-3213.png";
-import Img16 from "/gallery/img-3214.png";
-import Img17 from "/gallery/img-3215.png";
-import Img18 from "/gallery/img-3218.png";
-import Img19 from "/gallery/img-3309-2.png";
-import Img20 from "/gallery/img-3366.png";
-import Img21 from "/gallery/img-3504.png";
-import Img22 from "/gallery/img-4292.png";
-import Img23 from "/gallery/img-9085.jpg";
+import Img1 from "/gallery/1.jpg";
+import Img2 from "/gallery/2.jpg";
+import Img3 from "/gallery/3.jpg";
+import Img4 from "/gallery/4.jpg";
+import Img5 from "/gallery/5.jpg";
+import Img6 from "/gallery/6.jpg";
+import Img7 from "/gallery/7.jpg";
+import Img9 from "/gallery/8.jpg";
+// import Img10 from "/gallery/img-2515_orig.png";
+// import Img11 from "/gallery/img-2517.png";
+// import Img12 from "/gallery/img-2533.png";
+// import Img13 from "/gallery/img-2533_orig.png";
+// import Img14 from "/gallery/img-3181-2.png";
+// import Img15 from "/gallery/img-3213.png";
+// import Img16 from "/gallery/img-3214.png";
+// import Img17 from "/gallery/img-3215.png";
+// import Img18 from "/gallery/img-3218.png";
+// import Img19 from "/gallery/img-3309-2.png";
+// import Img20 from "/gallery/img-3366.png";
+// import Img21 from "/gallery/img-3504.png";
+// import Img22 from "/gallery/img-4292.png";
+// import Img23 from "/gallery/img-9085.jpg";
 
 const images = [
   Img1,
@@ -33,20 +33,20 @@ const images = [
   Img6,
   Img7,
   Img9,
-  Img10,
-  Img11,
-  Img12,
-  Img13,
-  Img14,
-  Img15,
-  Img16,
-  Img17,
-  Img18,
-  Img19,
-  Img20,
-  Img21,
-  Img22,
-  Img23,
+  // Img10,
+  // Img11,
+  // Img12,
+  // Img13,
+  // Img14,
+  // Img15,
+  // Img16,
+  // Img17,
+  // Img18,
+  // Img19,
+  // Img20,
+  // Img21,
+  // Img22,
+  // Img23,
 ];
 
 const Gallery = () => {

@@ -27,7 +27,7 @@ const galleryData = {
       "/gallery/Emily/4.jpg",
       "/gallery/Emily/5.jpg",
       "/gallery/Emily/6.jpg",
-      
+
       "/gallery/Emily/8.jpg",
       "/gallery/Emily/9.jpg",
       "/gallery/Emily/10.jpg",
@@ -40,6 +40,44 @@ const galleryData = {
       "/gallery/Emily/17.jpg",
     ],
   },
+  trisha: {
+    name: "Trisha Boone",
+    images: [
+      "/gallery/Trisha/1.jpg",
+      "/gallery/Trisha/2.jpg",
+      "/gallery/Trisha/3.jpg",
+      "/gallery/Trisha/4.jpg",
+      "/gallery/Trisha/5.jpg",
+      "/gallery/Trisha/6.jpg",
+
+      "/gallery/Trisha/8.jpg",
+      "/gallery/Trisha/9.jpg",
+      "/gallery/Trisha/10.jpg",
+      "/gallery/Trisha/11.jpg",
+      "/gallery/Trisha/12.jpg",
+      "/gallery/Trisha/13.jpg",
+      "/gallery/Trisha/14.jpg",
+      "/gallery/Trisha/15.jpg",
+      "/gallery/Trisha/16.jpg",
+      "/gallery/Trisha/17.jpg",
+    ],
+  },
+
+  shea: {
+    name: "Shea",
+    images: [
+      "/gallery/Shea/1.jpg",
+      "/gallery/Shea/2.jpg",
+      "/gallery/Shea/3.jpg",
+      "/gallery/Shea/4.jpg",
+      "/gallery/Shea/5.jpg",
+      "/gallery/Shea/6.jpg",
+
+      "/gallery/Shea/8.jpg",
+      "/gallery/Shea/9.jpg",
+    ],
+  },
+
   // Add more members...
 };
 

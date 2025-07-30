@@ -10,6 +10,7 @@ import Andrea from "/images/andreawallace.png";
 import Leslie from "/images/lesliej.png";
 import Shea from "/images/Shea2.jpg";
 import Angie from "/images/Angie.jpg";
+import Kayla from "/images/kayla.jpg"
 
 const teamMembers = [
   {
@@ -68,6 +69,11 @@ const teamMembers = [
     image: Angie,
     gallery: "/gallery6",
   },
+  {
+    name: "Kayla Flynt",
+    role: "Stylist",
+    image: Kayla,
+  }
 ];
 
 const Main = () => {
