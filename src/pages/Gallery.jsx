@@ -9,6 +9,7 @@ import Img5 from "/gallery/5.jpg";
 import Img6 from "/gallery/6.jpg";
 import Img7 from "/gallery/7.jpg";
 import Img9 from "/gallery/8.jpg";
+import Header from "../components/Header";
 // import Img10 from "/gallery/img-2515_orig.png";
 // import Img11 from "/gallery/img-2517.png";
 // import Img12 from "/gallery/img-2533.png";
@@ -62,9 +63,11 @@ const Gallery = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-50">
+    
+    <section className=" bg-gray-50">
+      <Header/>
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-extrabold text-center mb-12 text-gray-900">
+        <h2 className="text-4xl font-extrabold text-center mb-12 text-gray-900 mt-10">
           Twisted Sisters Gallery
         </h2>
 
