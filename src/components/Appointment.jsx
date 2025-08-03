@@ -13,6 +13,9 @@ export default function Appointment() {
     fetch("https://submit-form.com/Fah8w4pGF", {
       method: "POST",
       body: formData,
+      headers: {
+        Accept: "application/json",
+      },
     })
       .then((response) => {
         if (response.ok) {
