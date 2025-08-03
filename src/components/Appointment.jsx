@@ -1,32 +1,36 @@
-import React, { useState, useRef } from "react";
+import React, { useRef, useState } from "react";
 import BGImg3 from "/images/ap-bg.png";
 
 export default function Appointment() {
-  const [submitted, setSubmitted] = useState(false);
   const formRef = useRef(null);
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+ const handleSubmit = async (e) => {
+   e.preventDefault();
+   const formData = new FormData(formRef.current);
+   const data = Object.fromEntries(formData.entries());
 
-    // Submit form using native FormData
-    const formData = new FormData(formRef.current);
-    fetch("https://submit-form.com/Fah8w4pGF", {
-      method: "POST",
-      body: formData,
-      headers: {
-        Accept: "application/json",
-      },
-    })
-      .then((response) => {
-        if (response.ok) {
-          formRef.current.reset(); // Reset the form
-          setSubmitted(true); // Show success message
-        } else {
-          alert("Something went wrong. Please try again.");
-        }
-      })
-      .catch(() => alert("Something went wrong. Please try again."));
-  };
+   try {
+     const res = await fetch("https://submit-form.com/Fah8w4pGF", {
+       method: "POST",
+       headers: {
+         "Content-Type": "application/json",
+         Accept: "application/json",
+       },
+       body: JSON.stringify(data),
+     });
+
+     if (res.ok) {
+       setSubmitted(true);
+       formRef.current.reset();
+     } else {
+       console.error("Formspark rejected the submission");
+     }
+   } catch (err) {
+     console.error("Submission error", err);
+   }
+ };
+
 
   return (
     <section
@@ -41,11 +45,11 @@ export default function Appointment() {
             <h2 className="text-3xl font-bold mb-2">Get Appointment</h2>
             <p className="mb-6 text-gray-600">Fill out your information.</p>
 
-            {submitted ? (
-              <div className="text-green-600 font-semibold text-center mb-4">
-                Your appointment request has been submitted!
-              </div>
-            ) : null}
+            {submitted && (
+              <p className="text-green-600 text-center font-semibold mb-4">
+                Appointment submitted successfully!
+              </p>
+            )}
 
             <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
