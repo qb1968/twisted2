@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import BGImg3 from "/images/ap-bg.png";
 
-
 export default function Appointment() {
+  const [submitted, setSubmitted] = useState(false);
+  const formRef = useRef(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Submit form using native FormData
+    const formData = new FormData(formRef.current);
+    fetch("https://submit-form.com/Fah8w4pGF", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => {
+        if (response.ok) {
+          formRef.current.reset(); // Reset the form
+          setSubmitted(true); // Show success message
+        } else {
+          alert("Something went wrong. Please try again.");
+        }
+      })
+      .catch(() => alert("Something went wrong. Please try again."));
+  };
+
   return (
     <section
       id="booking"
@@ -16,11 +38,13 @@ export default function Appointment() {
             <h2 className="text-3xl font-bold mb-2">Get Appointment</h2>
             <p className="mb-6 text-gray-600">Fill out your information.</p>
 
-            <form
-              action="https://submit-form.com/Fah8w4pGF"
-              method="post"
-              className="space-y-6"
-            >
+            {submitted ? (
+              <div className="text-green-600 font-semibold text-center mb-4">
+                Your appointment request has been submitted!
+              </div>
+            ) : null}
+
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   type="text"
