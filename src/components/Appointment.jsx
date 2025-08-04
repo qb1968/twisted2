@@ -47,7 +47,7 @@ export default function Appointment() {
 
             {submitted && (
               <p className="text-green-600 text-center font-semibold mb-4">
-                Appointment submitted successfully!
+                Appointment request submitted successfully!
               </p>
             )}
 
@@ -55,26 +55,26 @@ export default function Appointment() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   type="text"
-                  name="firstn"
+                  name="Name"
                   placeholder="First Name"
                   required
                   className="input"
                 />
                 <input
                   type="email"
-                  name="email"
+                  name="Email"
                   placeholder="Email"
                   required
                   className="input"
                 />
                 <input
                   type="text"
-                  name="phone"
+                  name="Phone"
                   placeholder="Phone Number"
                   required
                   className="input"
                 />
-                <select name="stylist" required className="input">
+                <select name="Stylist" required className="input">
                   <option value="">Select Stylist</option>
                   <option>Sam</option>
                   <option>Jacki</option>
@@ -87,13 +87,13 @@ export default function Appointment() {
                   <option>Trisha</option>
                   <option>Shea</option>
                 </select>
-                <select name="service" required className="input">
+                <select name="Service" required className="input">
                   <option value="">Service Needed</option>
                   <option>Color Services</option>
                   <option>Haircut</option>
                   <option>Hair Treatments</option>
                 </select>
-                <select name="when" required className="input">
+                <select name="When" required className="input">
                   <option value="">How Soon</option>
                   <option>ASAP</option>
                   <option>Next Few Weeks</option>
@@ -102,7 +102,7 @@ export default function Appointment() {
               </div>
 
               <textarea
-                name="message"
+                name="Message"
                 rows="4"
                 placeholder="Write comments"
                 className="input"
