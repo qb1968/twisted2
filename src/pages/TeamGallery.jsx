@@ -10,7 +10,7 @@ export default function TeamGallery() {
       photo: "/images/trishaboone_orig.png",
     },
     { id: "shea", name: "Shea's Gallery", photo: "/images/Shea2.jpg" },
-    { id: "angie", name: "Angie's Gallery", photo: "/images/Angie.jpg" },
+   
   ];
 
   return (

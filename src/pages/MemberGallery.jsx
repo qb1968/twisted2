@@ -24,14 +24,7 @@ const galleryData = {
     name: "Shea",
     images: Array.from({ length: 9 }, (_, i) => `/gallery/Shea/${i + 1}.jpg`),
   },
-  angie: {
-    name: "Angie Lyn",
-    images: [
-      ...[
-        6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 27, 28, 29, 30, 31, 32, 33, 34,
-      ].map((n) => `/gallery/Angie/${n}.jpg`),
-    ],
-  },
+
 };
 
 export default function MemberGallery() {

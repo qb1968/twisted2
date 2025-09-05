@@ -29,14 +29,14 @@ const teamMembers = [
   { name: "Andrea Wallace", role: "Stylist", image: Andrea },
   { name: "Vanessa Faucette", role: "Stylist", image: Vanessa },
   { name: "Gloria Fornter", role: "Stylist", image: Gloria },
-  { name: "Shea", role: "Stylist", image: Shea, gallery: "/gallery2" },
+  { name: "Shea", role: "Stylist", image: Shea},
   {
     name: "Trisha Boone",
     role: "Stylist",
-    image: Trisha,
-    gallery: "/gallery3",
+    image: Trisha
+    
   },
-  { name: "Angie Lyn", role: "Stylist", image: Angie, gallery: "/gallery6" },
+ 
 ];
 
 const Main = () => {
